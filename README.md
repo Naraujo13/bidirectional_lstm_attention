@@ -1,6 +1,6 @@
 # bidirectional_lstm_attention
 
-This implemmentation uses a Bi-Directional LSTM with attention and glove embeddings in an attempt to solve Quora Insincere Questions Kaggle challenge.
+This implemmentation uses a Bi-Directional LSTM with attention and google news embeddings in an attempt to solve Quora Insincere Questions Kaggle challenge.
 https://www.kaggle.com/c/quora-insincere-questions-classification/data
 
 ## Problem:
@@ -23,6 +23,13 @@ Quora define 'insincere' as 'a question intended to make a statement rather than
 ## Dataset:
 The dataset used was the one provided by Quora with over a million questions classified as sincere or not, containing the question that was asked, and whether it was identified as insincere (target = 1). 
 The labeling of the dataset is not guaranteed to be 100% accurate, with some noise to be expected.
+
+## Embeddings
+
+External data sources were not allowed for this competition.
+It was providade some embeddings to be used, from which this model uses the Google News embeddings:
+
+    GoogleNews-vectors-negative300 - https://code.google.com/archive/p/word2vec/
 
 ## Results
 This model achieved the following results:
